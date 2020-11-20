@@ -1,21 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import BackgroundImage from "./src/components/BackgroundImage/BackgroundImage.component";
+import LoginForm from "./src/forms/LoginForm/LoginForm";
+import FormikForm from "./src/forms/FormikForm/FormikForm";
 
 export default function App() {
+  //<FormikForm />
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <BackgroundImage>
+      <LoginForm />
+    </BackgroundImage>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
