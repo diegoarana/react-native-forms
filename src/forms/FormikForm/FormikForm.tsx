@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Button, View, Text, ScrollView, TextInput } from "react-native";
 import styles from "./FormikForm.style";
 import { Formik, FormikErrors } from "formik";
-import RNPickerSelect, { Item } from "react-native-picker-select";
+import RNPickerSelect from "react-native-picker-select";
 
 interface Values {
   username: string;
